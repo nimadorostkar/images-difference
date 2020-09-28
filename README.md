@@ -11,7 +11,7 @@ find difference between two images with python
 ## Getting started
 <div dir="ltr">
 
-#### Pip
+#### Pip packages
 ```bash
 
 pip install scikit-image

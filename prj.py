@@ -1,4 +1,3 @@
-# import the necessary packages
 from skimage.measure import compare_ssim
 import argparse
 import imutils

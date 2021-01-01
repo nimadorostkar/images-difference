@@ -3,6 +3,7 @@ import argparse
 import imutils
 import cv2
  
+	
 # load the two input images
 imageA = cv2.imread('0.jpg')
 imageB = cv2.imread('1.jpg')
@@ -34,6 +35,7 @@ for c in cnts:
 	cv2.rectangle(imageA, (x, y), (x + w, y + h), (0, 0, 255), 2)
 	cv2.rectangle(imageB, (x, y), (x + w, y + h), (0, 0, 255), 2)
  
+
 # show the output images
 cv2.imshow("Original", imageA)
 cv2.imshow("Modified", imageB)

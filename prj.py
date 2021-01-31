@@ -4,6 +4,7 @@ import imutils
 import cv2
  
 	
+	
 # load the two input images
 imageA = cv2.imread('0.jpg')
 imageB = cv2.imread('1.jpg')
@@ -25,6 +26,7 @@ thresh = cv2.threshold(diff, 0, 255,
 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
 	cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
+
 
 # loop over the contours
 for c in cnts:

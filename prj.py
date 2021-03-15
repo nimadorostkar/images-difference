@@ -1,6 +1,7 @@
 from skimage.measure import compare_ssim
 import argparse
 import imutils
+
 import cv2
  
 	
@@ -18,6 +19,7 @@ grayB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
 (score, diff) = compare_ssim(grayA, grayB, full=True)
 diff = (diff * 255).astype("uint8")
 print("SSIM: {}".format(score))
+
 
 # threshold the difference image, followed by finding contours to
 # obtain the regions of the two input images that differ

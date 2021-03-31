@@ -21,6 +21,7 @@ diff = (diff * 255).astype("uint8")
 print("SSIM: {}".format(score))
 
 
+
 # threshold the difference image, followed by finding contours to
 # obtain the regions of the two input images that differ
 thresh = cv2.threshold(diff, 0, 255,
@@ -28,6 +29,7 @@ thresh = cv2.threshold(diff, 0, 255,
 cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
 	cv2.CHAIN_APPROX_SIMPLE)
 cnts = imutils.grab_contours(cnts)
+
 
 
 # loop over the contours
